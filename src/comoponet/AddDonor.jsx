@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import axios from 'axios'
+import Navbar from './Navbar'
 
 const AddDonor = () => {
 
@@ -63,7 +64,7 @@ const AddDonor = () => {
 
     return (
         <div>
-           
+           <Navbar />
 
             <div className="container">
                 <h2 className="heading">Add Blood Donor</h2>
