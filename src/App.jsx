@@ -7,6 +7,7 @@ import AddDonor from './comoponet/AddDonor'
 import ViewDonors from './comoponet/ViewDonors'
 import Navbar from './comoponet/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './comoponet/home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,9 @@ function App() {
   return (
     <>
      <BrowserRouter>
-     <Routes><Route path='/' element={<AddDonor/>} />
+     <Routes>
+     <Route path='/' element={<Home/>} />
+      <Route path='/add' element={<AddDonor/>} />
      <Route path='/view' element={<ViewDonors/>} />
      </Routes></BrowserRouter>
     </>

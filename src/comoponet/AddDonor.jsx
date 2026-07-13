@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-
 import axios from 'axios'
 import Navbar from './Navbar'
+import "./Donor.css";
 
 const AddDonor = () => {
 
@@ -30,7 +30,7 @@ const AddDonor = () => {
     const readValue = () => {
         console.log(input)
 
-        axios.post("http://localhost:5000/api/add-donor", input)
+        axios.post("https://host-demo-app.onrender.com/api/add-donor", input)
             .then((response) => {
                 console.log(response.data)
 
@@ -64,7 +64,7 @@ const AddDonor = () => {
 
     return (
         <div>
-           <Navbar />
+            <Navbar />
 
             <div className="container">
                 <h2 className="heading">Add Blood Donor</h2>
